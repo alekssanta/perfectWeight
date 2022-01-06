@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class Main1 {
     public static void main(String[] args) {
-//        int intDate = 22;
+//        int intDate = -1;
 
 String date = new SimpleDateFormat("k").format(new Date());
 int intDate = Integer.parseInt(date);
@@ -24,6 +24,12 @@ int intDate = Integer.parseInt(date);
         }
         if (intDate >= 17 && intDate < 22) {
             System.out.println("vecher");
+        }
+        if (intDate < 0) {
+            System.out.println("введите время суток правильно");
+        }
+        if (intDate>23) {
+            System.out.println("вернитесь с другой планеты на землю");
         }
 
     }
