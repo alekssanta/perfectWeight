@@ -7,8 +7,27 @@ public class Main2 {
         Integer bigLength = 10;
         String intStr = bigLength.toString();
         System.out.println("intStr = " + intStr);
+        System.out.println(intStr.charAt(0));
         long universeAge = 4_000_000_000L;
         boolean isNight = false;
+        String weightStr = "163 kg";
+        Integer weight = Integer.valueOf(weightStr.substring(0,3));
+        System.out.println("weight = " + weight);
+        
+        int smallVolume = 15;
+        Integer bigVolume = new Integer(smallVolume);
+        System.out.println("bigVolume = " + bigVolume);
+
+        Integer anotherVolume = 15;
+        if (bigVolume.equals(anotherVolume)){
+            System.out.println("volumes are equal");
+        }  if (!(bigVolume> anotherVolume) && !(bigVolume< anotherVolume)){
+            System.out.println("volumes equal");
+
+        }
+        else
+            System.out.println("volumes not equal");
+        
         System.out.println(name);
         String surname = new String(new char[]{'I', 'l', 'y', 'a'});
         System.out.println(surname);
