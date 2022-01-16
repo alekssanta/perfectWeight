@@ -49,5 +49,31 @@ public class Main2 {
         int strLen = name.length();
         System.out.println("strLen = " + strLen);
 
+        int monthNumber = 12;
+        String monthName = "";
+//        if (monthNumber == 3) {
+//            monthName = "March";
+//        } else if (monthNumber == 0) {
+//            monthName ="January";
+//        }
+String [] monthNames = {
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december",
+};
+monthName = monthNames[monthNumber-1];
+
+        System.out.println("monthName = " + monthName);
+
+
     }
 }
